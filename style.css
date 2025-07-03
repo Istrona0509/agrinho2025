@@ -1,4 +1,6 @@
-/* Estilos Gerais */
+/* ===========================
+   Estilos Gerais
+=========================== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,20 +9,39 @@ body {
     background-color: #f4f4f4; /* Cor de fundo geral */
     color: #333;
 }
-
-/* Cabeçalho */
+.capa {
+    background-image: url('https://i.im.ge/2025/06/13/JMRHZT.ChatGPT-Image-12-de-jun-de-2025-19-05-30.jpeg'); /* Nova imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* cor do texto na capa */
+    position: relative;
+  background-repeat: no-repeat;
+}
+/* ===========================
+   Cabeçalho
+=========================== */
 header {
-    background-color: #005f73;
+
     color: #fff;
     padding: 20px 0;
     text-align: center;
+ 
 }
 
 header h1 {
     margin: 0;
 }
 
-/* Navegação */
+/* ===========================
+   Navegação
+=========================== */
 nav {
     display: flex;
     justify-content: center;
@@ -34,18 +55,20 @@ nav a {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 4px;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: #94d2bd;
 }
 
-/* Seções */
+/* ===========================
+   Seções
+=========================== */
 section {
     padding: 20px;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto; /* Corrigido para centralizar */
 }
 
 /* Títulos de seções */
@@ -55,29 +78,31 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Estilo para container de imagens */
+/* ===========================
+   Container de Imagens
+=========================== */
 .image-container {
     margin-top: 10px;
     text-align: center;
 }
 
-/* Imagens dentro do container */
 .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* Adicionando uma sombra sutil para destaque */
+    /* Sombra sutil para destaque */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito ao passar o mouse na imagem */
 .image-container img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Botão voltar ao topo */
+/* ===========================
+   Botão Voltar ao Topo
+=========================== */
 #topBtn {
     display: none; /* Oculto inicialmente */
     position: fixed;
@@ -88,30 +113,31 @@ h2 {
     border: none;
     outline: none;
     background-color: #005f73;
-    color: white;
+    color: #fff;
     cursor: pointer;
     padding: 15px;
     border-radius: 50%;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Efeito ao passar o mouse no botão */
 #topBtn:hover {
     background-color: #0a9396;
     transform: scale(1.1);
 }
 
-/* Estilos específicos de exercícios */
+/* ===========================
+   Estilos de Exercícios
+=========================== */
 .exercise {
     background-color: #fff;
     margin: 20px auto;
     padding: 15px;
     border-radius: 8px;
     max-width: 500px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Inputs e botões */
+/* Inputs e Botões */
 input {
     margin-right: 10px;
     padding: 8px;
@@ -125,15 +151,15 @@ input:focus {
     border-color: #005f73;
 }
 
-/* Botões */
+/* Para melhor acessibilidade e consistência, ajuste os estilos de botão */
 button {
     padding: 8px 12px;
     background-color: #4CAF50;
     border: none;
     border-radius: 4px;
-    color: white;
+    color: #fff;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
@@ -141,17 +167,53 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Parágrafos */
+/* ===========================
+   Parágrafos
+=========================== */
 p {
     margin-top: 10px;
     font-weight: bold;
 }
 
-/* Rodapé */
+/* ===========================
+   Rodapé
+=========================== */
 footer {
     background-color: #005f73;
     color: #fff;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
+}
+
+/* ===========================
+   Parte da capa (banner)
+=========================== */
+.capa {
+    background-image: url('https://i.im.ge/2025/06/13/JMRHZT.ChatGPT-Image-12-de-jun-de-2025-19-05-30.jpeg'); /* Substitua pelo caminho da sua imagem de capa */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* ocupa toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* cor do texto na capa */
+    position: relative;
+}
+
+/* Título principal da capa */
+.titulo-capa {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtítulo ou descrição da capa */
+.subtitulo-capa {
+    font-size: 1.5em;
+    max-width: 800px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
